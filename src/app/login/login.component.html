@@ -1,0 +1,70 @@
+<div *ngIf="!isForgotPasswordScreen" class="container-fluid mt-5">
+    <div class="row justify-content-center align-items-center position_center">
+        <div class="user_card">
+            <div class="d-flex justify-content-center">
+                <div class="brand_logo_container">
+                    <img src="piconia.png" class="brand_logo" alt="Logo">
+                </div>
+            </div>
+            <div class="justify-content-center">
+                <form>
+                    <div class="m-5">
+                        <h3 class="text-center text-white">Employee Login</h3>
+                    </div>
+                    <div class="input-group mb-3">
+                        <div class="input-group-append">
+                            <span class="input-group-text"><i class="fas fa-user"></i></span>
+                        </div>
+                        <input type="text" name="" class="form-control input_user" value="" placeholder="Email">
+                    </div>
+                    <div class="input-group mb-3">
+                        <div class="input-group-append">
+                            <span class="input-group-text"><i class="fas fa-key"></i></span>
+                        </div>
+                        <input type="password" name="" class="form-control input_pass" value="" placeholder="password">
+                    </div>
+                    <!-- <div class="form-group">
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="customControlInline">
+                            <label class="custom-control-label" for="customControlInline">Remember me</label>
+                        </div>
+                    </div> -->
+                    <div class="d-flex justify-content-center mt-3 login_container">
+                        <button (click)="verifyUser()" type="button" name="button" class="btn login_btn">Login</button>
+                    </div>
+                    <!-- <div class="d-flex justify-content-center mt-3 login_container">
+                        <button type="button" name="button" class="btn login_btn w-50">Forgot your password?</button>
+                    </div> -->
+                </form>
+            </div>
+            <div class="mt-4">
+                <div class="d-flex justify-content-center">
+                    <a class="text-white" (click)="forgotPassword()"><u>Forgot your password?</u></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div *ngIf="isForgotPasswordScreen" class="container-fluid">
+    <div class="row justify-content-center align-items-center position_center">
+        <div class="user_card_forgotPass">
+            <div class="justify-content-center">
+                <h4 class="text-white">Forgot Password</h4>
+                <p class="text-white">Forgot your password? Enter your email address to receive a password reset link.</p>
+            </div>
+            <form>
+                <div class="input-group mb-3">
+                    <div class="input-group-append">
+                        <span class="input-group-text"><i class="fas fa-user"></i></span>
+                    </div>
+                    <input type="text" name="" class="form-control input_user" value="" placeholder="Email">
+                </div>
+                <div class="d-flex justify-content-center mt-3 login_container">
+                    <button type="button" name="button" class="btn login_btn">Continue</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

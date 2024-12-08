@@ -1,0 +1,49 @@
+/* Custom Navbar Background */
+.custom-navbar {
+    background: #719b24df; /* Green shade with opacity */
+    color: #ffffff; /* White text */
+  }
+  
+  /* Center navigation links */
+  .navbar-nav {
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  /* Link styles */
+  .nav-link {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #ffffff;
+    transition: color 0.3s ease, background-color 0.3s ease;
+  }
+  
+  /* Hover effect */
+  .nav-link:hover {
+    color: #719b24df; /* Matches navbar background for a subtle hover effect */
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    padding: 0.3rem 0.6rem;
+  }
+  
+  /* Active screen highlight */
+  .active-screen {
+    color: #fff !important;
+    background-color: #31A8DF !important; /* Blue color for active link */
+    border-radius: 5px;
+    padding: 0.3rem 0.6rem;
+  }
+  
+  /* Right side: Username and Logout button */
+  .navbar .btn {
+    font-size: 0.9rem;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+  }
+  
+  .navbar .btn:hover {
+    background: #31A8DF !important; /* Matches active link color */
+    border-color: #31A8DF !important;
+    color: #ffffff !important;
+  }
+  

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { DataStoreService } from './shared/data-store.service';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'paconiaPackaging';
+
+  constructor(public dataStore : DataStoreService){
+    
+  }
 }

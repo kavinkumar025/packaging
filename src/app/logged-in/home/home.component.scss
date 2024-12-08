@@ -1,0 +1,40 @@
+/* Fullscreen background for the welcome screen */
+.welcome-screen {
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // background: linear-gradient(135deg, #719b24df, #31A8DF);
+    color: white;
+  }
+  
+  /* Centered box styling */
+  .center-box {
+    height: 20vh;
+    width: 80vw;
+    background-color: #ffffff; /* White background inside */
+    border: 3px solid #31A8DF; /* Blue border */
+    border-radius: 10px; /* Rounded corners */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    text-align: center;
+  }
+  
+  /* Title text inside the box */
+  .welcome-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #719b24df; /* Green color for greeting */
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Subtitle/pleasant message */
+  .welcome-text {
+    font-size: 1.2rem;
+    color: #555; /* Subtle gray for secondary text */
+    margin: 0;
+  }
+  
